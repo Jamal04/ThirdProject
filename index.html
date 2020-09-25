@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <header id="header">
-      Landing Page
-      <img
-        src="https://www.flaticon.com/svg/static/icons/svg/3481/3481445.svg"
-        id="header-img"
-      />
-      <nav id="nav-bar">
-        <a class="nav-link" href="">First Element</a>
-        <a class="nav-link" href="">Second Element</a>
-        <a class="nav-link" href="">Third Element</a>
-      </nav>
+      <div>
+        <img
+          src="https://www.flaticon.com/svg/static/icons/svg/3481/3481445.svg"
+          id="header-img"
+        />
+      </div>
+      <div><h2>Landing Page</h2></div>
+      <div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#video">Video</a></li>
+            <li><a class="nav-link" href="#items">Items</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <div id="features">
+      <p>Premium Material</p>
+      <p>Fast Shipping</p>
+      <p>Quality Assurance</p>
+    </div>
     <iframe
       id="video"
       width="560"
@@ -29,8 +41,26 @@
     ></iframe>
     <form action="https://www.freecodecamp.org/email-submit" id="form">
       <label>Input your email</label>
-      <input id="email" type="email" placeholder="Your Email" required  />
+      <input id="email" type="email" placeholder="Your Email" required />
       <button id="submit">Submit</button>
     </form>
+
+    <div id="items">
+      <div class="single-item">
+        <p>This item is the first</p>
+        <p>This items is a little bit good</p>
+        <p>This item is cheap</p>
+      </div>
+      <div class="single-item">
+        <p>This item is the second</p>
+        <p>This items is a good</p>
+        <p>This item is moderate</p>
+      </div>
+      <div class="single-item">
+        <p>This item is the third</p>
+        <p>This items is a awesome</p>
+        <p>This item is expensive</p>
+      </div>
+    </div>
   </body>
 </html>
